@@ -10,3 +10,4 @@ deployment:
   region: "us-east-2"
   workers: "1"
   workerType: "MICRO"
+#This is the config file.
