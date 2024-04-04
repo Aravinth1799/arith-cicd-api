@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<configuration-properties doc:name="Configuration properties" doc:id="1d008699-7d5e-42e4-bc96-5040a397b438" file="myconfig-Dev.yaml" />
 	<flow name="arith-cicd-apiFlow" doc:id="57845aa3-4237-4dc5-ba8f-9157377f8ef1" >
 		<http:listener doc:name="Listener" doc:id="91eedeea-990b-480b-9474-a27d2a580933" config-ref="HTTP_Listener_config" path="/arith"/>
-		<logger level="INFO" doc:name="Logger" doc:id="556014b1-a81c-4cc8-8648-9f97d7a42e85" message="Arithmetic API is Invoked"/>
+		<logger level="INFO" doc:name="FirstLogger" doc:id="556014b1-a81c-4cc8-8648-9f97d7a42e85" message="-----Arithmetic API is Invoked ----"/>
 		<set-variable value="#[attributes.queryParams.num1]" doc:name="num_1" doc:id="33643b87-ee4e-4458-882d-85ed5f31ed84" variableName="num1"/>
 		<set-variable value="#[attributes.queryParams.num2]" doc:name="num_2" doc:id="f6c20cf2-740d-4ce0-a50b-2d24fed99622" variableName="num2"/>
 		<ee:transform doc:name="Transform Message" doc:id="9850668b-02d0-474e-93cb-9d5d13ccdeb1" >
