@@ -23,8 +23,7 @@ output application/json
 	"Message": p('log.Message'),
 	"add": (vars.num1 as Number + vars.num2 as Number),
 	"sub": (vars.num1 as Number - vars.num2 as Number),
-	"mul":(vars.num1 as Number * vars.num2 as Number),
-	"div":(vars.num1 as Number / vars.num2 as Number)
+	"mul":(vars.num1 as Number * vars.num2 as Number)
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
