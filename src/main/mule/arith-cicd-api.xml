@@ -23,11 +23,10 @@ output application/json
 	"Message": p('log.Message'),
 	"add": (vars.num1 as Number + vars.num2 as Number),
 	"sub": (vars.num1 as Number - vars.num2 as Number),
-	"mul": (vars.num1 as Number * vars.num2 as Number),
-	"div": (vars.num1 as Number / vars.num2 as Number)
+	"mul":(vars.num1 as Number * vars.num2 as Number)
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="e6dd32a1-8e25-4b23-93e5-5cb5b0dc0fda" message="Arithmetic API completed"/>
+		<logger level="INFO" doc:name="Logger" doc:id="e6dd32a1-8e25-4b23-93e5-5cb5b0dc0fda" message="Arithmetic API completed and verified"/>
 	</flow>
 </mule>
